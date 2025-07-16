@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "filename" : "ChatGPT Logo Creator Jul 16 2025.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "ChatGPT Logo Creator Image Jul 16 2025 (2).png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

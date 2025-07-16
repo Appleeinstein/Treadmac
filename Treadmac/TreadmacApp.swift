@@ -2,31 +2,25 @@
 //  TreadmacApp.swift
 //  Treadmac
 //
-//  Created by Harsh vithlani on 11/06/2025.
+//  Created by Harsh Vithlani on 11/06/2025.
 //
 
 import SwiftUI
-import SwiftData
 
 @main
-struct TreadmacApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
+struct TreadMacApp: App {
+    let dataController = DataController.shared
 
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        MenuBarExtra {
+            StartupWrapperView()
+                .modelContext(dataController.context)
+                .preferredColorScheme(.dark)
+                .frame(width: 300)
+        } label: {
+            Image("MenuBarIcon")
         }
-        .modelContainer(sharedModelContainer)
+        .menuBarExtraStyle(.window)
     }
 }
+
