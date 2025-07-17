@@ -71,6 +71,7 @@ Best for:
 
 > No sign-up. No cloud. Works on macOS 13 and above.
 <img src = "https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white" width="125" height="35">
+
 ---
 
 ## 🧪 Built With
